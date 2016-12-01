@@ -1,0 +1,36 @@
+{
+  "name": "slotchecker42",
+  "version": "0.1.0",
+  "description": "A light Node.js app for Ecole 42",
+  "engines": {
+    "node": "~5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "config": "^1.20.4",
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
+    "request": "^2.72.0",
+    "simple-oauth2": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sploadie/weatherbook"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "42"
+  ],
+  "author": "sploadie",
+  "license": "MIT"
+}

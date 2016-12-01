@@ -1,0 +1,8 @@
+{
+  "name": "Node.js Slot Checker 42",
+  "description": "A light Node.js app for Ecole 42",
+  "repository": "https://github.com/sploadie/slotchecker42",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "static"],
+  "image": "heroku/nodejs"
+}
