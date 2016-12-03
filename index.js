@@ -84,18 +84,6 @@ app.get('/auth42', function(req, res) {
 
 
 
-
-
-
-
-
-
-app.get('/webhook', function (req, res) {
-  var data = req.body;
-  console.log('Call body:', data);
-  res.sendStatus(200);
-});
-
 // Start server
 // Webhooks must be available via SSL with a certificate signed by a valid 
 // certificate authority.
