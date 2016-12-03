@@ -53,7 +53,7 @@ const auth42URI = auth42.authorizationCode.authorizeURL({
 // });
 
 app.get('/', (req, res) => {
-  res.send('Slot Checker 42<br><a href="/auth42_redirect">Log in with Github</a>');
+  res.send('Slot Checker 42<br><a href="/auth42_redirect">Log in with intra42</a>');
 });
 
 app.get('/auth42_redirect', function(req, res) {
@@ -64,7 +64,8 @@ app.get('/auth42', function(req, res) {
   console.log('Callback Query:', req.query);
   const code = req.query.code;
   const options = {
-    code,
+    code: code,
+    redirect_uri: SERVER_URL+'/auth42'
   };
 
   auth42.authorizationCode.getToken(options, (error, result) => {
