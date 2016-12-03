@@ -13,7 +13,7 @@ var app = express();
 app.set('port', process.env.PORT || 5000);
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
-app.use(bodyParser.json({ verify: verifyRequestSignature }));
+app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 // Get config values
